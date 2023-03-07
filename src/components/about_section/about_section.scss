@@ -1,0 +1,42 @@
+.about {
+    position: fixed;
+    height: calc(100% - 3rem);
+    overflow-x: hidden;
+    top: 3rem;
+    width: 100%;
+    z-index: 2;
+
+    .about-heading {
+        position: fixed;
+        margin-top: 1rem;
+        display: flex;
+
+        .about-heading-list {
+            display: flex;
+            gap: 2rem;
+
+            .single-heading {
+                list-style: none;
+                border-radius: 2rem;
+                border: 1px solid rgb(154, 154, 154);
+                padding: 0.2rem 0.5rem;
+                transition-duration: 300ms;
+                text-align: center;
+                @media (max-width: 768px) {
+                    width: 40px;
+                    height: 10px;
+                    font-size: 0.5rem;
+                    text-align: center;
+                }
+                &:hover {
+                    border: 1px solid rgb(0, 217, 255);
+                    cursor: default;
+                }
+            }
+            .single-heading.active{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

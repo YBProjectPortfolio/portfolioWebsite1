@@ -1,0 +1,9 @@
+@import "./../component_common.scss";
+
+.developer {
+    .developer-body {
+        animation: from_bottom 300ms ease-in-out;
+        position: absolute;
+        top: 7rem;
+    }
+}

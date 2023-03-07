@@ -1,0 +1,14 @@
+$dark-background-navItems: rgba(63, 63, 63, 0.5);
+$dark-background-primary: rgb(58, 58, 58);
+$dark-background-secondary: rgb(44, 44, 44);
+
+@keyframes from_right {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

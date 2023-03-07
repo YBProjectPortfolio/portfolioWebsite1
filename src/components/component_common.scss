@@ -1,0 +1,14 @@
+$mobile-background-secondary: rgb(44, 44, 44);
+$mobile-background-navItems: rgba(63, 63, 63, 0.5);
+
+@keyframes from_bottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,162 @@
+$text-color-primary: rgb(102, 102, 102);
+$text-color-secondary: rgb(171, 171, 171);
+$background-color-primary: rgb(29, 29, 29);
+$background-color-secondary: rgb(47, 47, 47);
+$navigation-mobile-primary: rgb(22, 22, 22);
+$navigation-mobile-secondary: rgb(33, 33, 33);
+
+#dark {
+    .App {
+        .navigation {
+            background-color: $background-color-secondary;
+
+            .nav {
+                .single_nav {
+                    color: $text-color-primary;
+
+                    &:hover {
+                        background-color: $text-color-primary;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .App {
+            .menu {
+                background-color: $background-color-secondary;
+
+                .bar {
+                    background-color: $text-color-primary;
+                }
+            }
+
+            .navigation.open {
+                .single_nav {
+                    background-color: $navigation-mobile-primary;
+                    color: $text-color-primary;
+
+                    &:hover {
+                        background-color: $navigation-mobile-secondary;
+                        color: $text-color-secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        background-color: $background-color-primary;
+
+        .title {
+            color: $text-color-primary;
+        }
+
+        .btn-showcase-container {
+            .btn-showcase {
+                a{
+                    color: $text-color-secondary;
+                }
+
+                &:hover {
+                    background-color: $text-color-primary;
+                }
+            }
+        }
+    }
+
+    .about {
+        background-color: $background-color-secondary;
+
+        .about-heading {
+            .single-heading.active {
+                color: black;
+                background-color: rgb(120, 120, 120);
+            }
+
+            .single-heading {
+                background-color: $background-color-secondary;
+                color: $text-color-secondary;
+            }
+        }
+
+        .aboutme {
+            .aboutme-body {
+                .aboutme-body-container {
+                    .aboutme-body-description {
+                        .description {
+                            color: $text-color-secondary;
+                        }
+
+                        .signature {
+                            color: $text-color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .privacy {
+            color: $text-color-secondary;
+        }
+
+        .tab {
+
+            .thirdparty {
+                .thirdparty-body {
+                    .license-body {
+                        .license {
+                            color: $text-color-secondary;
+                        }
+
+                        .license-title {
+                            color: $text-color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #educationMain {
+        background-color: $background-color-primary;
+        .heading1{
+            color: $text-color-primary;
+        }
+        .heading2{
+            color: $text-color-secondary;
+        }
+        .container {
+            color: white;
+            .year{
+                color: $text-color-secondary;
+            }
+            .groups {
+                .title {
+                    color: $text-color-secondary;
+                }
+            }
+        }
+        .quote{
+            color: $text-color-secondary;
+        }
+        .heading3{
+            color: $text-color-secondary;
+            .date{
+                color: $text-color-secondary;
+            }
+        }
+    }
+
+    .showcase {
+        background-color: $background-color-primary;
+
+        .search-container {
+            .search {
+                background-color: $background-color-secondary;
+            }
+        }
+    }
+}

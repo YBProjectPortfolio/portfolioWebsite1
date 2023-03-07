@@ -1,0 +1,8 @@
+@import "./../component_common.scss";
+.sitemap{
+    .sitemap-body{
+        animation: from_bottom 300ms ease-in-out;
+        position: absolute;
+        top: 7rem;
+    }
+}

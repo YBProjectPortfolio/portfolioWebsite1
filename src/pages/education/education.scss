@@ -1,0 +1,87 @@
+@import "./../pages_common.scss";
+
+$baxShadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.477);
+$date: rgba(0, 0, 0, 0.36);
+
+#educationMain {
+    animation: from_right 300ms ease-in-out;
+    position: absolute;
+    height: calc(100% - 3rem);
+    overflow-x: hidden;
+    top: 3rem;
+    width: 100%;
+    z-index: 2;
+
+    .container {
+        margin: 1rem;
+
+        .heading1 {
+            text-decoration: underline red;
+        }
+
+        .groups {
+            .title {
+                .subtitle {
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                }
+
+                .year {
+                    font-size: 0.8rem;
+                    color: $date;
+                    font-style: italic;
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .quote {
+        font-style: italic;
+        padding: 0.3rem;
+        margin: 0.5rem;
+        border-radius: 0.2rem;
+        background-color: rgba(33, 33, 33, 0.502);
+        color: #fff;
+        box-shadow: $baxShadow;
+    }
+
+    .heading2 {
+        text-decoration: underline red 2px;
+    }
+    
+    .heading3 {
+        .subheading {
+            
+        }
+
+        .date {
+            font-style: italic;
+            display: flex;
+            justify-content: right;
+            width: 100%;
+            color: $date;
+        }
+
+        .description {
+            box-shadow: $baxShadow;
+            padding: 0.4rem 0.2rem;
+            border-radius: 0.2rem;
+            margin: 1rem 0;
+        }
+    }
+
+    .lists {
+        background-color: rgba(255, 255, 255, 0.572);
+        margin: 0 3rem;
+        border-radius: 0.2rem;
+
+        .list {
+            box-shadow: $baxShadow;
+            margin-top: 0.3rem;
+            padding: 0.4rem 0.2rem;
+            list-style: inside;
+            color: rgb(0, 0, 0);
+        }
+    }
+}
